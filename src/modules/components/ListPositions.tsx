@@ -6,7 +6,7 @@ const ListPositions = () => {
 
   return (
     <>
-      {globalError && <p>{globalError}</p>}
+      {globalError && <p className="text-red-600">{globalError}</p>}
       <div className=" grid grid-cols-3 gap-10 justify-center">
         {positions &&
           positions.map(({ id, title }) => (
